@@ -22,17 +22,14 @@ catkin_package(
   LIBRARIES
     vigir_ocs_rviz_plugin_image_selection_tool_custom
     vigir_ocs_rviz_plugin_mesh_display_custom
-    vigir_ocs_rviz_plugin_map_display_custom
     vigir_ocs_rviz_plugin_interaction_tool_custom
     vigir_ocs_rviz_plugin_image_selection_tool_custom_core
     vigir_ocs_rviz_plugin_mesh_display_custom_core
-    vigir_ocs_rviz_plugin_map_display_custom_core
     vigir_ocs_rviz_plugin_interaction_tool_custom_core
     ${OPENGL_LIBRARIES}
   INCLUDE_DIRS
     vigir_ocs_rviz_plugin_image_selection_tool_custom/src
     vigir_ocs_rviz_plugin_mesh_display_custom/src
-    vigir_ocs_rviz_plugin_map_display_custom/src
     vigir_ocs_rviz_plugin_interaction_tool_custom/src
     ${OPENGL_INCLUDE_DIR}
   CATKIN_DEPENDS
@@ -51,7 +48,6 @@ catkin_package(
 include_directories(
         vigir_ocs_rviz_plugin_image_selection_tool_custom/src
         vigir_ocs_rviz_plugin_interaction_tool_custom/src
-        vigir_ocs_rviz_plugin_map_display_custom/src
         vigir_ocs_rviz_plugin_mesh_display_custom/src
 	${catkin_INCLUDE_DIRS})
 
@@ -64,7 +60,6 @@ link_directories(${catkin_LIBRARY_DIRS})
 
 add_subdirectory(vigir_ocs_rviz_plugin_image_selection_tool_custom)
 add_subdirectory(vigir_ocs_rviz_plugin_interaction_tool_custom)
-add_subdirectory(vigir_ocs_rviz_plugin_map_display_custom)
 add_subdirectory(vigir_ocs_rviz_plugin_mesh_display_custom)
 
 install(FILES
