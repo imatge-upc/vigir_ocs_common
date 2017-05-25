@@ -32,7 +32,7 @@
   <run_depend>cv_bridge</run_depend>
 
   <export>
-      <rviz plugin="${prefix}/camera_display_custom_plugin_description.xml"/>
+<!--       <rviz plugin="${prefix}/camera_display_custom_plugin_description.xml"/> -->
       <rviz plugin="${prefix}/image_selection_tool_custom_plugin_description.xml"/>
       <rviz plugin="${prefix}/interaction_tool_custom_plugin_description.xml"/>
       <rviz plugin="${prefix}/map_display_custom_plugin_description.xml"/>
